@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Países</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="mt-4">Lista de Países</h1>
+        <input type="text" id="search" placeholder="Buscar país" class="form-control mb-3">
+        <select id="region-filter" class="form-control mb-3">
+            <option value="">Selecione a Região</option>
+            <option value="Africa">África</option>
+            <option value="America">América</option>
+            <option value="Asia">Ásia</option>
+            <option value="Europe">Europa</option>
+            <option value="Oceania">Oceania</option>
+        </select>
+        <div id="country-list" class="row"></div>
+        <button id="back-to-top" class="btn btn-secondary mt-4" style="display: none;">Voltar ao Topo</button>
+        <button id="load-more" class="btn btn-primary mt-4">Carregar Mais</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
